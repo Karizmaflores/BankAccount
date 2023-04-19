@@ -10,8 +10,36 @@ const jobTypes = {
 };
 
 // Your code will go here
+class CrewMember {
+  constructor(name, job, specialSkill){
+    this.name = name;
+    this.job = job;
+    this.specialSkill = specialSkill;
+    this.ship = null;
+  }
+}
 
 
+//create new crewMembers 1 and 2 here
+const crewMember1.enterShip(){
+
+}
+
+const crewMember2.enterShip(){
+
+}
+
+class Ship {
+  constructor(name, type, ability){
+    this.name = name;
+    this.type = type;
+    this.ability = ability;
+  }
+}
+
+const mav.missionStatement(){
+
+}
 
 
 
