@@ -15,33 +15,33 @@ class CrewMember {
     this.name = name;
     this.job = job;
     this.specialSkill = specialSkill;
-    this.ship = null;
+    this.crew = null;
+  }
+  enterShip(ship){
+    this.ship = ship;
+    ship.crew.push(this);
   }
 }
 
-
-//create new crewMembers 1 and 2 here
-const crewMember1.enterShip(){
-
-}
-
-const crewMember2.enterShip(){
-
-}
+// create new crewMembers 1 and 2 here
+const crewMember1 = new CrewMember('Rick Martinez', 'pilot', 'chemistry');
+const crewMember2 = new CrewMember('Commander Lewis', 'commander', 'geology');
 
 class Ship {
   constructor(name, type, ability){
     this.name = name;
     this.type = type;
     this.ability = ability;
+    this.crew = [];
+  }
+  missionStatement() {
+    if (this.crew.length === 0){
+      return "Can't perform a mission yet.";
+    }
+    else
+      return this.ability;
   }
 }
-
-const mav.missionStatement(){
-
-}
-
-
 
 
 
